@@ -10,7 +10,7 @@
         <v-col cols="12" sm="4">
           <v-card-text class="white--text pt-2">
             <v-btn icon>
-              <v-icon color="#A7121D">fas fa-dragon</v-icon>
+              <v-icon color="#2465aa">fas fa-dragon</v-icon>
             </v-btn>
           </v-card-text>
         </v-col>
@@ -34,7 +34,7 @@
             <v-btn class="mx-1 white--text" icon>
               <v-icon color="#A7121D">mdi-heart</v-icon>
             </v-btn>
-            Created by AAE IdeaPro
+            Created by Sammy Merazga
           </v-card-text>
         </v-col>
       </v-row>
@@ -46,5 +46,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>
