@@ -5,7 +5,7 @@
 ![VueJS](https://img.shields.io/badge/-vuejs-05122A?style=flat&logo=vue.js)&nbsp;
 ![Vuetify](https://img.shields.io/badge/-vuetify-05122A?style=flat&logo=vuetify)&nbsp;
 
-## Work environment (in this project) 🏠
+### Work environment (in this project) 🏠
 
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
 ![Linux](https://img.shields.io/badge/-Linux-05122A?style=flat&logo=linux&logoColor=white)&nbsp;
