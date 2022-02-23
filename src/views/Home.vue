@@ -47,10 +47,33 @@
                       <li>Symfony</li>
                     </ul>
                   </p>
-                  <v-btn color="#2465aa" dark text>
+                <v-dialog v-model="dialogBackEnd" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text v-bind="attrs" v-on="on">
                     En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Back-end</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>Je suis en capacité de développer un back-end en NodeJS (petite préférence avec TypeScript 😅) ainsi qu'avec le framework de PHP Symfony (PHP Vanilla aussi).</p>
+                      <p>Concernant les bases de données, j'ai déjà travaillé avec du PostgreSQL, MySQL, SQLite ainsi que MongoDB (NoSQL).</p>
+                      <p class="caption">Je vous invite à aller sur mon Github pour voir les projets en questions avec ces technologies 😃</p>
+                    </v-card-text>
+                    <v-card-actions>
+                    <v-btn icon href="https://github.com/SammyMERAZGA?sort=&tab=repositories" target="_blank">
+                      <v-icon color="#2465aa">fab fa-github</v-icon>
+                    </v-btn>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogBackEnd = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
                 </div>
                 <div class="child bgColor2" id="whiteShadow">
                   <v-icon x-large class="ml-3" dark
@@ -64,16 +87,40 @@
                       <li>React</li>
                     </ul>
                   </p>
-                  <v-btn dark text>
+                  <v-dialog v-model="dialogFrontEnd" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="white" dark text v-bind="attrs" v-on="on">
                     En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Front-end</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>Le front-end ce que je préfère lors du développement d'une application web 🥰.</p>
+                      <p>J'utilise principalement le framework VueJS que j'apprécie énormément !</p>
+                      <p class="caption">Je combine VueJS avec le langage TypeScript pour avoir plus de sécurité dans mon code et pour gagner en lisibilité. De plus, j'utilise Vuetify (Material Design Framework) car je trouve le style Material Design très beau 🤗.</p>
+                      <p>Malgré ma préférence pour VueJS, je peux aussi très bien faire du React avec Material UI qui est une libraire UI (Material Design) de React fonctionnant comme Vuetify.</p>
+                    </v-card-text>
+                    <v-card-actions>
+                    <v-btn icon href="https://github.com/SammyMERAZGA?sort=&tab=repositories" target="_blank">
+                      <v-icon color="#2465aa">fab fa-github</v-icon>
+                    </v-btn>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogFrontEnd = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
                 </div>
                 <div class="child bgColor1 ml-3" id="shadow">
                   <v-icon color="#2465aa" x-large class="ml-3"
                     >fas fa-users</v-icon
                   >
-                  <h3 class="white--text ml-3 mt-4">Gestion de projets</h3>
+                  <h3 class="white--text ml-3 mt-4">Gestion de projet</h3>
                   <p class="grey--text ml-3 mt-6">
                     <ul>
                       <li>Jira Software</li>
@@ -81,10 +128,33 @@
                       <li>Microsoft Project</li>
                     </ul>
                   </p>
-                  <v-btn color="#2465aa" dark text>
+                  <v-dialog v-model="dialogManagement" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text v-bind="attrs" v-on="on">
                     En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Gestion de projet</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>Étant étudiant à l'Institut G4, on est formé à une double compétence à la fois en informatique mais aussi en gestion de projet .</p>
+                      <p>L'école nous permet de décrocher le Titre de "Chef de Projet Système d'Information" (certifié par l'État - RNCP niveau 7).</p>
+                      <p>Je suis donc en capacité de gérer un projet 😀.</p>
+                    </v-card-text>
+                    <v-card-actions>
+                    <v-btn icon href="https://github.com/SammyMERAZGA?sort=&tab=repositories" target="_blank">
+                      <v-icon color="#2465aa">fab fa-github</v-icon>
+                    </v-btn>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogManagement = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
                 </div>
               </v-col>
             </v-row>
@@ -244,8 +314,16 @@ export default {
     NavBar,
     Footer,
   },
+  data () {
+    return {
+      dialogBackEnd: false,
+      dialogFrontEnd: false,
+      dialogManagement: false,
+    };
+  },
 };
 </script>
+
 <style scoped>
 .top {
   margin-top: 180px;
