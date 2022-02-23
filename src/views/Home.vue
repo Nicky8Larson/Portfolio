@@ -7,234 +7,207 @@
     <v-container fluid>
       <v-row>
         <v-col cols="6">
-          <v-img src="1.png" contain max-height="500"></v-img>
+          <v-img src="1.png" contain max-height="500" class="ml-15 mr-15 mt-5" id="imgSmy"></v-img>
         </v-col>
         <v-col cols="6">
-          <h5 class="blue--text text--darken-4 top">Bonjour, je suis</h5>
+          <h5 class="blue--text text--darken-3 top">Bonjour, je suis</h5>
           <h1 class="white--text">Sammy Merazga</h1>
           <p class="grey--text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Adipisci explicabo, cupiditate necessitatibus iure hic omnis est ab
-            <br />
-            At nihil et temporibus ratione!
+            Je suis un étudiant en Bac +3 à l'<a
+              href="https://www.institut-g4.fr/"
+              class="text-decoration-none"
+              >Institut G4</a
+            >
+            qui est une école <br />qui nous forme à une double compétence en
+            informatique et en management.
           </p>
-          <v-btn tile color="#2465aa" dark @click="scroll('contact')"
-            >À propos</v-btn
-          >
+          <p class="grey--text">
+            J'effectue ma poursuite d'études en alternance avec l'entreprise
+            <a href="https://www.tempo-one.com/" class="text-decoration-none"
+              >Tempo One</a
+            >
+            <br />
+            en tant que développeur Full Stack.
+          </p>
+          <v-btn href="../assets/others/Merazga_Sammy_CV.pdf" target="_blank" tile color="#2465aa" dark>Mon CV</v-btn>
         </v-col>
         <v-col cols="12" class="padd">
           <div class="first" id="project">
             <v-row>
               <v-col cols="12">
-                <div class="child bgColor1">
+                <div class="child bgColor1 mr-5" id="shadow">
                   <v-icon color="#2465aa" x-large class="ml-3"
                     >fas fa-desktop</v-icon
                   >
-                  <h3 class="white--text ml-3 mt-4">Front-end</h3>
+                  <h3 class="white--text ml-3 mt-4">Back-end</h3>
                   <p class="grey--text ml-3 mt-6">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    elit.
+                    <ul>
+                      <li>NodeJS</li>
+                      <li>PrismaORM</li>
+                      <li>Symfony</li>
+                    </ul>
                   </p>
                   <v-btn color="#2465aa" dark text>
-                    know more
+                    En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
                 </div>
-                <div class="child bgColor2">
+                <div class="child bgColor2" id="whiteShadow">
                   <v-icon color="" x-large class="ml-3" dark
                     >fas fa-server</v-icon
                   >
-                  <h3 class="white--text ml-3 mt-4">Back-end</h3>
-                  <p class="grey--text ml-3 mt-6">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    elit.
+                  <h3 class="white--text ml-3 mt-4">Front-end</h3>
+                  <p class="white--text ml-3 mt-6">
+                    <ul>
+                      <li>VueJS</li>
+                      <li>Vuetify</li>
+                      <li>React</li>
+                    </ul>
                   </p>
                   <v-btn color="" dark text>
-                    know more
+                    En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
                 </div>
-                <div class="child bgColor1">
+                <div class="child bgColor1 ml-3" id="shadow">
                   <v-icon color="#2465aa" x-large class="ml-3"
                     >fas fa-users</v-icon
                   >
                   <h3 class="white--text ml-3 mt-4">Gestion de projets</h3>
                   <p class="grey--text ml-3 mt-6">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    elit.
+                    <ul>
+                      <li>Jira Software</li>
+                      <li>GanttProject</li>
+                      <li>Microsoft Project</li>
+                    </ul>
                   </p>
                   <v-btn color="#2465aa" dark text>
-                    know more
+                    En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
-                </div>
-              </v-col>
-              <v-col cols="12" class="mt-10">
-                <div class="child1">
-                  <h1 class="blue--text text--darken-4 mt-4 number">2</h1>
-                  <h3 class="white--text mt-4">Années d'expériences</h3>
-                </div>
-                <div class="child2 mRight">
-                  <v-row>
-                    <v-col cols="12" class="childcol">
-                      <div class="child2 mButton padding bgColor1">
-                        <h1 class="blue--text text--darken-4">Lorem.</h1>
-                        <p class="grey--text">Lorem, ipsum.</p>
-                      </div>
-                    </v-col>
-                    <v-col cols="12" class="childcol">
-                      <div class="child2 padding bgColor1">
-                        <h1 class="blue--text text--darken-4">20+</h1>
-                        <p class="grey--text">Projets complétés</p>
-                      </div>
-                    </v-col>
-                  </v-row>
-                </div>
-                <div class="child2">
-                  <v-row>
-                    <v-col cols="12" class="childcol">
-                      <div class="child2 mButton padding bgColor1">
-                        <h1 class="blue--text text--darken-4">3</h1>
-                        <p class="grey--text">Expériences professionnelles</p>
-                      </div>
-                    </v-col>
-                    <v-col cols="12" class="childcol">
-                      <div class="child2 padding bgColor1">
-                        <h1 class="blue--text text--darken-4">Lorem.</h1>
-                        <p class="grey--text">Lorem, ipsum.</p>
-                      </div>
-                    </v-col>
-                  </v-row>
                 </div>
               </v-col>
             </v-row>
           </div>
         </v-col>
         <v-col md="3" offset-md="3" id="about">
-          <h4 class="white--text">Principaux projets</h4>
-          <p class="grey--text">Lorem ipsum dolor Lorem ipsum dolor</p>
+          <h3 class="white--text">Projets</h3>
         </v-col>
         <v-col md="3" class="text-end">
           <v-btn
             tile
             color="#2465aa"
             dark
+            class="rounded-xl"
             href="https://github.com/SammyMERAZGA?tab=repositories"
+            target="_blank"
           >
             Tout voir
           </v-btn>
         </v-col>
         <v-col md="3" offset-md="3">
           <v-card
-            class="pa-2 py-12"
             outlined
             tile
-            height="250px"
+            id="shadow"
+            height="230px"
             color="#1E1E1E"
           >
-            <v-img src="3.png" contain max-height=""></v-img>
+            <v-img src="../assets/EcoServices.png" contain></v-img>
           </v-card>
+          <div class="text-center">
+            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
+              Éco Services
+            </v-btn><br>
+            <v-btn color="#2465aa" dark text class="ml-n4">
+              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
+            <v-btn color="#2465aa" dark text class="ml-15">
+              Code source <v-icon right class="mb-1">fab fa-github</v-icon>
+            </v-btn>
+          </div>
         </v-col>
-        <v-col md="3">
+        <v-col md="3" class="ml-5">
           <v-card
-            class="pa-2 py-12"
             outlined
             tile
-            height="250px"
+            id="shadow"
+            height="230px"
             color="#1E1E1E"
           >
-            <v-img src="2.png" contain max-height=""></v-img>
+            <v-img src="../assets/HealthSmy.png" contain></v-img>
           </v-card>
-        </v-col>
-        <v-col md="3" offset-md="3">
-          <v-btn color="white" dark text class="ml-n4">Éco Services </v-btn
-          ><br />
-
-          <v-btn color="#2465aa" dark text class="ml-n4">
-            En savoir plus
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-          <v-btn color="#2465aa" dark text class="ml-10">
-            Code source
-            <v-icon right class="mb-1">fab fa-github</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col md="3">
-          <v-btn color="white" dark text class="ml-n4"> Health Smy </v-btn
-          ><br />
-
-          <v-btn color="#2465aa" dark text class="ml-n4">
-            En savoir plus
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-          <v-btn color="#2465aa" dark text class="ml-10">
-            Code source
-            <v-icon right class="mb-1">fab fa-github</v-icon>
-          </v-btn>
+          <div class="text-center">
+            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
+              Health Smy
+            </v-btn><br>
+            <v-btn color="#2465aa" dark text class="ml-n4">
+              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
+            <v-btn color="#2465aa" dark text class="ml-15">
+              Code source <v-icon right class="mb-1">fab fa-github</v-icon>
+            </v-btn>
+          </div>
         </v-col>
         <v-col md="3" offset-md="3">
           <v-card
-            class="pa-2 py-12"
             outlined
             tile
-            height="250px"
+            id="shadow"
+            height="230px"
             color="#1E1E1E"
           >
-            <v-img src="4.png" contain max-height=""></v-img>
+            <v-img src="../assets/roomSmy.png" contain></v-img>
           </v-card>
+          <div class="text-center">
+            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
+              My Virtual Room
+            </v-btn><br>
+            <v-btn color="#2465aa" dark text class="ml-n4">
+              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
+            <v-btn color="#2465aa" dark text class="ml-15">
+              Code source <v-icon right class="mb-1">fab fa-github</v-icon>
+            </v-btn>
+          </div>
         </v-col>
-        <v-col md="3">
+        <v-col md="3" class="ml-5">
           <v-card
-            class="pa-2 py-12"
             outlined
             tile
-            height="250px"
+            id="shadow"
+            height="230px"
             color="#1E1E1E"
           >
-            <v-img src="5.png" contain max-height=""></v-img>
+            <v-img src="../assets/EcoServices.png" contain></v-img>
           </v-card>
-        </v-col>
-        <v-col md="3" offset-md="3">
-          <v-btn color="white" dark text class="ml-n4 mt-1"> Mon CV </v-btn
-          ><br />
-
-          <v-btn color="#2465aa" dark text class="ml-n4">
-            En savoir plus
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-          <v-btn color="#2465aa" dark text class="ml-10">
-            Code source
-            <v-icon right class="mb-1">fab fa-github</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col md="3">
-          <v-btn color="white" dark text class="ml-n4 mt-1">
-            My Virtual Room </v-btn
-          ><br />
-          <v-btn color="#2465aa" dark text class="ml-n4">
-            En savoir plus
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-          <v-btn color="#2465aa" dark text class="ml-10">
-            Code source
-            <v-icon right class="mb-1">fab fa-github</v-icon>
-          </v-btn>
+          <div class="text-center">
+            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
+              Éco Services
+            </v-btn><br>
+            <v-btn color="#2465aa" dark text class="ml-n4">
+              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
+            <v-btn color="#2465aa" dark text class="ml-15">
+              Code source <v-icon right class="mb-1">fab fa-github</v-icon>
+            </v-btn>
+          </div>
         </v-col>
         <v-col cols="12" class="padd topInverse">
           <div class="second">
             <div class="secondchild1" id="contact">
               <v-row>
                 <v-col cols="7">
-                  <h1 class="white--text">
-                    Travaillons ensemble sur<br />votre prochain projet
+                  <h1 class="white--text mb-5 text-center">
+                    Travaillons ensemble sur<br />votre prochain projet !
                   </h1>
-                  <p class="grey--text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius nesciunt ducimus natus <br />
+                  <p class="grey--text text-center">
+                    N'hésitez pas à me contacter pour me donner vos avis sur mon
+                    portfolio aussi !<br />
                   </p>
                 </v-col>
                 <v-col cols="5">
-                  <v-btn tile color="#2465aa" dark class="mt-16">
+                  <v-btn tile color="#2465aa" class="rounded-xl" dark id="btnContact">
                     Contact
                   </v-btn>
                 </v-col>
@@ -252,10 +225,6 @@
                 text-align: center;
               "
             >
-              <v-btn text>Accueil</v-btn>
-              <v-btn text>Projets</v-btn>
-              <v-btn text>À propos</v-btn>
-              <v-btn text>Contact</v-btn>
             </div>
           </v-toolbar>
         </v-col>
@@ -271,9 +240,6 @@ import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
   components: {
     NavBar,
     Footer,
@@ -292,8 +258,9 @@ export default {
   text-align: center;
 }
 .first {
+  margin-top: 1%;
   width: 100%;
-  height: 610px;
+  height: 365px;
   background: linear-gradient(
     to right,
     #181818,
@@ -364,5 +331,34 @@ export default {
 h1.number {
   font-size: 50px;
   font-weight: bold;
+}
+
+#imgSmy {
+  border: 3px solid #2465aa;
+  border-radius: 50%;
+  box-shadow: #2465aa;
+  box-shadow: 0 0 15px rgb(69, 144, 206);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#imgSmy:hover{
+  transform:rotate3d(0,1,0,180deg);
+}
+
+#shadow {
+  box-shadow: 0 0 15px #2465aa;
+}
+
+#whiteShadow {
+  box-shadow: 0 0 15px rgb(35, 49, 95);
+}
+
+#btnContact {
+  margin-top: 20%;
+  margin-left: 30%;
 }
 </style>

@@ -19,12 +19,14 @@
           <v-card-text class="pt-2">
             <v-btn
               v-for="icon in icons"
-              :key="icon"
+              :key="icon.id"
               class="mx-1 white--text"
               icon
+              :href="icon.url"
+              target="_blank"
             >
               <v-icon size="24px">
-                {{ icon }}
+                {{ icon.name }}
               </v-icon>
             </v-btn>
           </v-card-text>
@@ -43,7 +45,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      icons: [
+        {
+          id: 1,
+          name: "fab fa-github",
+          url: "https://github.com/SammyMERAZGA"
+        },
+        {
+          id: 2,
+          name: "fab fa-linkedin",
+          url: "https://fr.linkedin.com/in/sammy-merazga",
+        }
+      ]
+    };
+  },
+};
 </script>
 
 <style></style>
