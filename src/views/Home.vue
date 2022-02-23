@@ -189,9 +189,30 @@
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
               Éco Services
             </v-btn><br>
-            <v-btn color="#2465aa" dark text class="ml-n4">
-              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
-            </v-btn>
+            <v-dialog v-model="dialogProject1" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text class="ml-n4" v-bind="attrs" v-on="on">
+                    En savoir plus
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Éco Services</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>J'ai réalisé ce projet dans le cadre de mes études à l'Institut G4 🎓.</p>
+                      <p>Éco Services est un site e-commerce avec la possibilité d'acheter des produits éco-responsables ainsi que de faire une demande de devis pour un service écologique.</p>
+                      <p>Technologies utilisées ➡️ Front-end : TypeScript, VueJS et Vuetify | Back-end : TypeScript, NodeJS (Express), PrismaORM, PostgreSQL</p>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogProject1 = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
             <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/clientEcoServices" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
@@ -211,9 +232,30 @@
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
               Health Smy
             </v-btn><br>
-            <v-btn color="#2465aa" dark text class="ml-n4">
-              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
-            </v-btn>
+            <v-dialog v-model="dialogProject2" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text class="ml-n4" v-bind="attrs" v-on="on">
+                    En savoir plus
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Health Smy</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>Il s'agit d'un projet personnel ; le projet est toujours en cours ⏳.</p>
+                      <p>L'un de mes objectifs est de travailler dans la santé car c'est le domaine de mon père. J'ai donc lancé un projet dans le domaine de la santé 🏥.</p>
+                      <p>Technologies utilisées : VueJS et Vuetify</p>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogProject2 = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
             <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/medicalDashboard" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
@@ -233,9 +275,29 @@
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
               My CV in React
             </v-btn><br>
-            <v-btn color="#2465aa" dark text class="ml-n4">
-              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
-            </v-btn>
+            <v-dialog v-model="dialogProject3" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text class="ml-n4" v-bind="attrs" v-on="on">
+                    En savoir plus
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Mon CV</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>J'ai trouvé sympa l'idée de développé un site web présentant mon CV étant donné que je suis développeur.. Puis, on économise du papier ! 💚</p>
+                      <p>Technologies utilisées : React et Sass</p>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogProject3 = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
             <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/CV" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
@@ -255,9 +317,30 @@
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
               Galaxy Swiss Bourdin (GSB)
             </v-btn><br>
-            <v-btn color="#2465aa" dark text class="ml-n4">
-              En savoir plus <v-icon right>mdi-arrow-right</v-icon>
-            </v-btn>
+            <v-dialog v-model="dialogProject4" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark text class="ml-n4" v-bind="attrs" v-on="on">
+                    En savoir plus
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline">Projet GSB</span>
+                    </v-card-title>
+                    <v-card-text class="text-center white--text mt-2">
+                      <p>J'ai réalisé ce projet dans le cadre de mon BTS SIO au lycée Victor Hugo 🎓.</p>
+                      <p>Le but de ce projet était de fournir un outil informatique pour les praticiens du laboratoire GSB. (Consultation de médicaments, de praticiens et de visiteurs)</p>
+                      <p>Technologies utilisées : PHP Vanilla, HTML/CSS, JavaScript, MySQL</p>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialogProject4 = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
             <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/GCR" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
@@ -277,9 +360,77 @@
                   </p>
                 </v-col>
                 <v-col cols="5">
-                  <v-btn tile color="#2465aa" class="rounded-xl" dark id="btnContact">
+                  <v-dialog v-model="dialogContact" persistent width="600px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="#2465aa" dark class="rounded-xl" id="btnContact" v-bind="attrs" v-on="on">
                     Contact
+                    <v-icon right>fas fa-address-book</v-icon>
                   </v-btn>
+                  </template>
+                  <v-card color="#181818" class="rounded-xl">
+                    <v-card-title class="justify-center text-center">
+                      <span class="text-h5 blue--text text-decoration-underline mb-5">Contact</span>
+                    </v-card-title>
+                    <v-container>
+                      <v-row>
+                        <v-col
+                          cols="12"
+                          md="5"
+                          class="ml-10"
+                        >
+                          <v-text-field
+                            v-model="firstname"
+                            label="Prénom"
+                            dark
+                            outlined
+                          ></v-text-field>
+                        </v-col>
+
+                        <v-col
+                          cols="12"
+                          md="5"
+                        >
+                          <v-text-field
+                            v-model="lastname"
+                            label="Nom"
+                            required
+                            dark
+                            outlined
+                          ></v-text-field>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                    <v-text-field
+                      v-model="email"
+                      label="E-mail"
+                      required
+                      dark
+                      outlined
+                      class="ml-8 mr-8"
+                      >
+                    </v-text-field>
+                    <v-col
+                      cols="12"
+                      md="12"
+                    >
+                      <v-textarea
+                        outlined
+                        class="ma-3"
+                        label="Dites-moi tout !"
+                        dark
+                      ></v-textarea>
+                    </v-col>
+                    <div class="text-center">
+                    <v-btn tile color="#2465aa" class="rounded-xl" dark>Envoyer</v-btn>
+                    </div>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="white" text @click="dialogContact = false">
+                        Retour
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
                 </v-col>
               </v-row>
             </div>
@@ -319,6 +470,11 @@ export default {
       dialogBackEnd: false,
       dialogFrontEnd: false,
       dialogManagement: false,
+      dialogProject1: false,
+      dialogProject2: false,
+      dialogProject3: false,
+      dialogProject4: false,
+      dialogContact: false,
     };
   },
 };
