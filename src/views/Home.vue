@@ -43,7 +43,7 @@
                   <p class="grey--text ml-3 mt-6">
                     <ul>
                       <li>NodeJS</li>
-                      <li>PrismaORM</li>
+                      <li>Express.js</li>
                       <li>Symfony</li>
                     </ul>
                   </p>
@@ -53,18 +53,18 @@
                   </v-btn>
                 </div>
                 <div class="child bgColor2" id="whiteShadow">
-                  <v-icon color="" x-large class="ml-3" dark
+                  <v-icon x-large class="ml-3" dark
                     >fas fa-server</v-icon
                   >
                   <h3 class="white--text ml-3 mt-4">Front-end</h3>
                   <p class="white--text ml-3 mt-6">
                     <ul>
+                      <li>TypeScript</li>
                       <li>VueJS</li>
-                      <li>Vuetify</li>
                       <li>React</li>
                     </ul>
                   </p>
-                  <v-btn color="" dark text>
+                  <v-btn dark text>
                     En savoir plus
                     <v-icon right>mdi-arrow-right</v-icon>
                   </v-btn>
@@ -122,7 +122,7 @@
             <v-btn color="#2465aa" dark text class="ml-n4">
               En savoir plus <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
-            <v-btn color="#2465aa" dark text class="ml-15">
+            <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/clientEcoServices" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
           </div>
@@ -144,7 +144,7 @@
             <v-btn color="#2465aa" dark text class="ml-n4">
               En savoir plus <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
-            <v-btn color="#2465aa" dark text class="ml-15">
+            <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/medicalDashboard" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
           </div>
@@ -155,18 +155,18 @@
             tile
             id="shadow"
             height="230px"
-            color="#1E1E1E"
+            color="white"
           >
-            <v-img src="../assets/roomSmy.png" contain></v-img>
+            <v-img src="../assets/CV.png" max-height="200" class="mt-3" contain></v-img>
           </v-card>
           <div class="text-center">
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
-              My Virtual Room
+              My CV in React
             </v-btn><br>
             <v-btn color="#2465aa" dark text class="ml-n4">
               En savoir plus <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
-            <v-btn color="#2465aa" dark text class="ml-15">
+            <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/CV" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
           </div>
@@ -177,18 +177,18 @@
             tile
             id="shadow"
             height="230px"
-            color="#1E1E1E"
+            color="white"
           >
-            <v-img src="../assets/EcoServices.png" contain></v-img>
+            <v-img src="../assets/GCR.png" max-height="200" class="mr-15 mt-5" contain></v-img>
           </v-card>
           <div class="text-center">
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
-              Éco Services
+              Galaxy Swiss Bourdin (GSB)
             </v-btn><br>
             <v-btn color="#2465aa" dark text class="ml-n4">
               En savoir plus <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
-            <v-btn color="#2465aa" dark text class="ml-15">
+            <v-btn color="#2465aa" dark text class="ml-15" href="https://github.com/SammyMERAZGA/GCR" target="_blank">
               Code source <v-icon right class="mb-1">fab fa-github</v-icon>
             </v-btn>
           </div>
@@ -354,7 +354,7 @@ h1.number {
 }
 
 #whiteShadow {
-  box-shadow: 0 0 15px rgb(35, 49, 95);
+  box-shadow: 0 0 15px rgb(35, 71, 187);
 }
 
 #btnContact {
