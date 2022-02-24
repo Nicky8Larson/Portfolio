@@ -29,7 +29,7 @@
             <br />
             en tant que développeur Full Stack.
           </p>
-          <v-btn href="../assets/others/CV.pdf" target="_blank" tile color="#2465aa" dark>Mon CV</v-btn>
+          <v-btn href="https://cv-sammymerazga.vercel.app/" target="_blank" tile color="#2465aa" dark>Mon CV</v-btn>
         </v-col>
         <v-col cols="12" class="padd">
           <div class="first" id="skills">
@@ -272,7 +272,7 @@
             <v-img src="../assets/CV.png" max-height="200" class="mt-3" contain></v-img>
           </v-card>
           <div class="text-center">
-            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
+            <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline" href="https://cv-sammymerazga.vercel.app/">
               My CV in React
             </v-btn><br>
             <v-dialog v-model="dialogProject3" persistent width="600px">
