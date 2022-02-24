@@ -58,6 +58,11 @@ export default {
           id: 2,
           name: "fab fa-linkedin",
           url: "https://fr.linkedin.com/in/sammy-merazga",
+        },
+        {
+          id: 3,
+          name: "fas fa-envelope",
+          url: "mailto:sammy.merazga@gmail.com"
         }
       ]
     };

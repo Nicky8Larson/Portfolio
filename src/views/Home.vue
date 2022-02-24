@@ -29,10 +29,10 @@
             <br />
             en tant que développeur Full Stack.
           </p>
-          <v-btn href="../assets/others/Merazga_Sammy_CV.pdf" target="_blank" tile color="#2465aa" dark>Mon CV</v-btn>
+          <v-btn href="../assets/others/CV.pdf" target="_blank" tile color="#2465aa" dark>Mon CV</v-btn>
         </v-col>
         <v-col cols="12" class="padd">
-          <div class="first" id="project">
+          <div class="first" id="skills">
             <v-row>
               <v-col cols="12">
                 <div class="child bgColor1 mr-5" id="shadow">
@@ -161,7 +161,7 @@
           </div>
         </v-col>
         <v-col md="3" offset-md="3" id="about">
-          <h3 class="white--text">Projets</h3>
+          <h3 class="white--text" id="project">Projets</h3>
         </v-col>
         <v-col md="3" class="text-end">
           <v-btn
@@ -313,7 +313,7 @@
           >
             <v-img src="../assets/GCR.png" max-height="200" class="mr-15 mt-5" contain></v-img>
           </v-card>
-          <div class="text-center">
+          <div class="text-center mb-15">
             <v-btn color="white" dark text class="ml-n4 mt-5 mb-2 text-decoration-underline">
               Galaxy Swiss Bourdin (GSB)
             </v-btn><br>
@@ -346,109 +346,6 @@
             </v-btn>
           </div>
         </v-col>
-        <v-col cols="12" class="padd topInverse">
-          <div class="second">
-            <div class="secondchild1" id="contact">
-              <v-row>
-                <v-col cols="7">
-                  <h1 class="white--text mb-5 text-center">
-                    Travaillons ensemble sur<br />votre prochain projet !
-                  </h1>
-                  <p class="grey--text text-center">
-                    N'hésitez pas à me contacter pour me donner vos avis sur mon
-                    portfolio aussi !<br />
-                  </p>
-                </v-col>
-                <v-col cols="5">
-                  <v-dialog v-model="dialogContact" persistent width="600px">
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn color="#2465aa" dark class="rounded-xl" id="btnContact" v-bind="attrs" v-on="on">
-                    Contact
-                    <v-icon right>fas fa-address-book</v-icon>
-                  </v-btn>
-                  </template>
-                  <v-card color="#181818" class="rounded-xl">
-                    <v-card-title class="justify-center text-center">
-                      <span class="text-h5 blue--text text-decoration-underline mb-5">Contact</span>
-                    </v-card-title>
-                    <v-container>
-                      <v-row>
-                        <v-col
-                          cols="12"
-                          md="5"
-                          class="ml-10"
-                        >
-                          <v-text-field
-                            v-model="firstname"
-                            label="Prénom"
-                            dark
-                            outlined
-                          ></v-text-field>
-                        </v-col>
-
-                        <v-col
-                          cols="12"
-                          md="5"
-                        >
-                          <v-text-field
-                            v-model="lastname"
-                            label="Nom"
-                            required
-                            dark
-                            outlined
-                          ></v-text-field>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                    <v-text-field
-                      v-model="email"
-                      label="E-mail"
-                      required
-                      dark
-                      outlined
-                      class="ml-8 mr-8"
-                      >
-                    </v-text-field>
-                    <v-col
-                      cols="12"
-                      md="12"
-                    >
-                      <v-textarea
-                        outlined
-                        class="ma-3"
-                        label="Dites-moi tout !"
-                        dark
-                      ></v-textarea>
-                    </v-col>
-                    <div class="text-center">
-                    <v-btn tile color="#2465aa" class="rounded-xl" dark>Envoyer</v-btn>
-                    </div>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="white" text @click="dialogContact = false">
-                        Retour
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
-                </v-col>
-              </v-row>
-            </div>
-          </div>
-          <v-toolbar class="topTolbar" color="#111111" dark flat>
-            <div
-              style="
-                position: absolute;
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-                text-align: center;
-              "
-            >
-            </div>
-          </v-toolbar>
-        </v-col>
       </v-row>
     </v-container>
     <Footer />
@@ -474,7 +371,6 @@ export default {
       dialogProject2: false,
       dialogProject3: false,
       dialogProject4: false,
-      dialogContact: false,
     };
   },
 };
@@ -589,10 +485,5 @@ h1.number {
 
 #whiteShadow {
   box-shadow: 0 0 15px rgb(35, 71, 187);
-}
-
-#btnContact {
-  margin-top: 20%;
-  margin-left: 30%;
 }
 </style>
